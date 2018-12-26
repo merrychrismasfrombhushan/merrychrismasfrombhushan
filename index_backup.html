@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,67 +8,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-<link href='http://fonts.googleapis.com/css?family=Questrial|Droid+Sans|Alice' rel='stylesheet' type='text/css'>
-<link href="site.css" rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Droid+Sans|Alice' rel='stylesheet' type='text/css'>
+    <link href="site.css" rel='stylesheet' type='text/css'>
 
 </head>
-<body style="background-color:#f5f5f5">
-    <div class="container-fluid ">
-        <div class="row">
-            <!--Begin-The santa animation-->
-            <div class="col-xl-9 p-3">
-                <canvas id="christmasSnow" width="1000px" height="630px">
-                    Your browser does not support the HTML5 canvas tag.
-                </canvas>
-            </div>
-            <!--End-The santa animation-->
 
-        <div class="col-xl-3">
-            <form>
-                <h1>*I will choose 5 people randomly to send out the gifts of their choice</h1>
-            
-                <div class="contentform">
-                    <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
-            
-            
+<body style="background-color:gray">
+    <div class="container-fluid ">
+
+        <!--The gift card form -->
+        <form>
+            <h1>Merry Chrismas Everyone</h1>
+
+            <div class="contentform">
+                <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+                <div class="leftcontact">
                     <div class="form-group">
                         <p>Full Name<span>*</span></p>
                         <span class="icon-case"><i class="fa fa-male"></i></span>
                         <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné." />
                         <div class="validation"></div>
                     </div>
-            
+
                     <div class="form-group">
                         <p>Wish <span>*</span></p>
                         <span class="icon-case"><i class="fa fa-user"></i></span>
                         <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné." />
                         <div class="validation"></div>
                     </div>
-                    <h4>Please limit your wish up to<b> $10 </b></h4>
-            
-                </div>
-                <button type="submit" class="bouton-contact">Send</button>
-            
-            </form>
-        </div>
-            <!--The gift card form -->
-         
-          </div>
-        </div>
 
-    
+                </div>
+
+                <div class="rightcontact">
+                    <h4>Please limit your widh up to $10 ;)</h4>
+                    <h3>I will 5 people randomly to send out the gifts of theire choice</h3>
+
+
+                </div>
+            </div>
+            <button type="submit" class="bouton-contact">Send</button>
+
+        </form>
+    </div>
+    <div class="container">
+        <canvas id="christmasSnow" width="1000px" height="630px">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+    </div>
+
+
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
 <script>
 
     $(document).ready(function () {
-        var imageUrl = "Christmas_Modified.jpg";
+        var imageUrl = "https://github.com/zhedahht/JsInPractice/blob/master/MerryChristmas/Christmas.jpg?raw=true";
         makeSnow("christmasSnow", imageUrl);
     });
 
@@ -192,6 +193,6 @@
         var random = Math.random() * (max - min) + min;
         return random;
     }
-    </script>
+</script>
+
 </html>
-    
